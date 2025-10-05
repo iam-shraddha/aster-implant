@@ -4,7 +4,7 @@
 FROM gradle:7.6.0-jdk17 AS backend-build
 WORKDIR /app
 
-COPY BE-Hyper--main/BE-Hyper-main/ ./
+COPY BE-Hyper-main/ ./
 RUN chmod +x ./gradlew
 RUN ./gradlew bootJar --no-daemon -x test
 
@@ -14,7 +14,7 @@ RUN ./gradlew bootJar --no-daemon -x test
 FROM node:18-alpine AS frontend-build
 WORKDIR /app
 
-COPY implantweb-main/implantweb-main/package*.json ./
+COPY implantweb-main/package*.json ./
 RUN npm install --silent
 COPY implantweb-main/implantweb-main/ ./
 RUN npm run build
