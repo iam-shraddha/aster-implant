@@ -16,7 +16,7 @@ WORKDIR /app
 
 COPY implantweb-main/package*.json ./
 RUN npm install --silent
-COPY implantweb-main/implantweb-main/ ./
+COPY implantweb-main/ ./
 RUN npm run build
 
 # ----------------------------
