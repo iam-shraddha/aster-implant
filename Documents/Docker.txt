@@ -1,0 +1,26 @@
+Docker Engine - All containers are running on it
+Docker Daemon - Service which manages the containers
+Docker CLI    - To pass the required commands to dockerd
+Docker client - To connect with API and communicate with engine 
+
+Docker desktop=>create account=>get docker=>dw docker desktop
+Login to aws=>launch ec2=>install docker 
+     - sudo apt-get nstall docker.io
+     - sudo usermod -aG docker $USER
+     - newgrp docker
+     - docker ps
+
+Docker File      - All the required instructions to build the image
+Docker Image     - It's a blueprint which contains all the things to run an application
+Docker Container - After running image container will get created
+
+Login to DockerHub: Docker public and private images are stored
+Go to settings=>PAT=>generate new token=>Go to terminal=>docker login(provide uname and PAT)
+      - docker pull hello-world
+      - docker images
+      - docker run hello-world 
+
+
+
+neeta tower old mumbai pune hwy agrasen nagar socirty phugewadi dapodi pune pmpl
+.
